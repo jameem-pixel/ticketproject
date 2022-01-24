@@ -1,0 +1,45 @@
+    {% extends 'task/main.html' %}
+    {% load static %}
+    {% block content %}
+<div class = container>
+    <div style="text-align:center">
+        <h2>Select to login</h2>
+    </div>
+
+    <div class="row">
+        <div class="column"  style="background:green;">
+        <a href="{% url 'login %'}"><h4>Raise</h4></a>
+        </div>
+        <div class="column" style="background:blue;">
+            <a href="{% url 'login %"><h4>System Admin</h4></a>
+        </div>
+
+    </div>
+</div>
+
+    <style>
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+    </style>
+{% endblock %}

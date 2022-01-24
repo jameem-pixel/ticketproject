@@ -3,7 +3,6 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
-<<<<<<< HEAD
 
 class CustomAccountManager(BaseUserManager):
 
@@ -65,8 +64,8 @@ class NewUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.user_name
-=======
+
 # Create your models here.
 
- 
->>>>>>> f3c9f897a336963742e4c8e4883c7bb7ee44c27b
+
+
