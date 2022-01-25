@@ -5,3 +5,6 @@ from django.shortcuts import render,redirect
 from .models import *
 def home(request):
     return render(request,'task/home.html')
+
+def loginpage(request):
+    return render(request,'task/login.html')
